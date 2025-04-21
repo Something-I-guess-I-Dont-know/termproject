@@ -1,0 +1,88 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+}
+#webname {
+    background-color: lightblue;
+}
+nav{
+    text-decoration:underline;
+    color: blueviolet;
+    display:inline-block;
+    background-color: lightblue;
+    width:max-content;
+    height:fit-content;
+}
+form * {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#valid {
+    display: none;
+}
+.container {
+    display: inline-block;
+    border-radius: 10%;
+}
+.mainLayout {
+    display:flex
+    "align-self: center"
+}
+.content {
+    max-width: 1200px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: whitesmoke;
+}
+html {
+    background-color: lightcoral;
+}
+.map {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logo {
+    display: block;
+    float:right;
+}
+.important {
+    background-color:crimson;
+}
+.logoStyle {
+    width: 200px;
+    height: 100px;
+}
+.trivia {
+    display:none;
+}
+/*didnt copy and paste following code segment directly but learned how to do this from the w3schools website*/
+div.container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    max-width: 600px;
+}
+/*didnt copy and paste following code segment directly but learned how to do this from the w3schools website*/
+div.container img {
+    padding:10px;
+    width:600px;
+    height:400px;
+}
+.shop {
+    height:300px;
+    width:auto;
+}
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2 {
+    font-family:serif;
+}

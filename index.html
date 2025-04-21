@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./static/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <meta charset="UTF-8">
+    <title>The Incline</title>
+</head>
+<body class="content">
+    <header><h1 id="webname">The Duquesne Incline</h1> 
+        <nav><a href="index.html">Home</a>
+            <a href="views/contact.html">Visitor Information</a>
+            <a href="views/shop.html">Gift Shop</a>
+            <a href="views/about.html">Learn More About The Incline</a>
+        </nav>
+        <div class="logo">
+            <img class="logoStyle" src="./static/DuqInclineLogo.png" alt="logo">
+        </div>
+    </header>
+    <h2>Find Us Here!</h2>
+    <div class="map"> 
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.550735398311!2d-80.02012818875012!3d40.43983757131672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af24753323%3A0x391d7b79fc54985b!2sDuquesne%20Incline!5e1!3m2!1sen!2sus!4v1743279001824!5m2!1sen!2sus" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <div class="content">
+            <h2>Welcome to the Incline!</h2>
+            <p>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. 
+            Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. 
+            The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.
+            </p>
+        </div>
+    </div>
+    <div class="map">
+        <a href="https://maps.app.goo.gl/RXhkdqDJbqC2LDr68">Click Here to Find Parking</a>
+        <button onclick="getLocation()">Click here to get your location so you can see how far from the incline you are</button>
+    </div>
+    <div>
+        <h2>Check out this video on the incline to see more</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bSLvrz5GraI?si=o-IqiZKnsd2RPpJ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        <h3 class="content">Pictures of the Incline:</h3>
+    <!--didnt copy and paste following code segment directly but learned how to do this from the w3schools website-->
+    <div class="container">
+        <img src="./static/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg" alt="incline in the morning">
+        <img src="./static/Duquesne_incline.jpg" alt="incline">
+        <img src="./static/Duquesne_Incline_Inside_Horizontal_2984px.jpg" alt="incline horizontal">
+    </div>
+    <div>pictures courtesy of wikimedia commons under creative commons lisences</div>
+    <div>
+        <form>
+            <h3>Join the Mailing List!</h3>
+            <div>Your name(required)</div>
+            <input type="text" id="name" name="name" required>
+            <div>your email(required)</div>
+            <input type="email" id="email" name="email" required>
+            <div>Would you like to recieve notifications via SMS text?(optional) <input type="checkbox" id="check"></div>
+            <div>phone number(optional)</div>
+            <input type="tel" id="phone" name="phone">
+            <div>5 digit Zip Code(optional)</div>
+            <input type="text" id="zip" name="zip" minlength="5" maxlength="5">
+            <input type="submit" value="submit" onclick="checkValidMail()">
+            <div id = "valid">Please make sure your inputs are valid</div>
+        </form>
+    </div>
+    <footer><p> designed and coded by Billy McGrath &#169; 2025 </p></footer>
+</body>
+</html>
